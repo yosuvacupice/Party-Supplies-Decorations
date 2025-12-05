@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party supplies and Decorations</title>
+    <!-- ===================== CSS =================== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ================== FONTS ================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+    <!-- ======================= ICONS ======================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ====================== HEADER ====================== -->
+    <header>
+        <div class="header_container">
+            <div class="header_left">
+                <div class="header_logo" onclick="window.location.href='index.html'">
+                    <div class="header_one"><span>O</span>ne</div>
+                    <div class="header_event">Event</div>
+                </div>
+            </div>
+            <div class="header_right">
+                <ul>
+                    <li><a href="index.html" class="header_link_active">Home</a></li>
+                    <li><a href="venue.html">Venue</a></li>
+                    <li><a href="suppliers.html">Suppliers</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- ====================== SECTION 1 ====================== -->
+    <section class="section_1">
+        <div class="section_1_conatiner">
+            <h2>Your Wedding, Your Way</h2>
+            <div class="section_1_box_container">
+                <div class="dropdown_box">
+                    <div class="dropdown_btn">
+                        <h2>Select Category</h2>
+                        <i class="ri-arrow-down-s-fill dropdown_icon" data-target="cat-dropdown"></i>
+                    </div>
+                    <div class="dropdown_content" id="cat-dropdown">
+                        <h2>Selected Category</h2>
+                        <ul>
+                            <li>Decorators</li>
+                            <li>Venue Planners</li>
+                            <li>Choreographers</li>
+                            <li>Makeup Artist</li>
+                            <li>Bar Services</li>
+                            <li>Designers</li>
+                            <li>Celebrant</li>
+                            <li>Honeymoon</li>
+                            <li>Photographer</li>
+                            <li>Viedographer</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown_box">
+                    <div class="dropdown_btn">
+                        <h2>Select Location</h2> 
+                        <i class="ri-arrow-down-s-fill dropdown_icon" data-target="loc-dropdown"></i>
+                    </div>
+                    <div class="dropdown_content" id="loc-dropdown">
+                        <h2>Selected Location</h2>
+                        <ul>
+                            <li>Chennai</li>
+                            <li>Mumbai</li>
+                            <li>Madurai</li>
+                            <li>Delhi</li>
+                            <li>Dubai</li>
+                            <li>Kanniyakumari</li>
+                            <li>Tirunelveli</li>
+                            <li>Bangaloure</li>
+                            <li>Tiruvananthapuram</li>
+                            <li>Kochi</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section_1_button">
+                    <button>Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== SECTION 2 ====================== -->
+    <section class="section_2">
+        <div>
+            <h2>Browse By Category</h2>
+            <p onclick="window.location.href='suppliers.html'">View Al (10)</p>
+        </div>
+        <div class="slide_wrapper">
+            <div class="slide_container" id="slide_container">
+                <!-- PAGE 1 -->
+                <div class="slide_page" id="slide_page_1">
+                    <div class="slide_card">
+                        <img src="assets/image 1.png">
+                        <h2>DESTINATION WEDDINGS</h2>
+                    </div>
+                    <div class="slide_card">
+                        <img src="assets/image 2.png">
+                        <h2>HONEYMOON & TRAVEL WEDDING</h2>
+                    </div>
+                    <div class="slide_card">
+                        <img src="assets/image 3.png">
+                        <h2>VIDEOGRAPHERS WEDDING</h2>
+                    </div>
+                    <div class="slide_card">
+                        <img src="assets/section_2_image_4.png">
+                        <h2>CELEBRANT</h2>
+                    </div>
+                </div>
+                <!-- PAGE 2 -->
+                <div class="slide_page" id="slide_page_2">
+                    <div class="slide_card">
+                        <img src="assets/section_2_image_4.png">
+                        <h2>CELEBRANT</h2>
+                    </div>
+                    <div class="slide_card">
+                        <img src="assets/image 2 (1).png">
+                        <h2>MAKEUP ARTIST</h2>
+                    </div>
+                    <div class="slide_card">
+                        <img src="assets/section_2_7_image.png">
+                        <h2>WEDDING VENUE</h2>
+                    </div>
+                    <div class="slide_card">
+                        <img src="assets/image 19 (1).png">
+                        <h2>DECORATORS</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- SLIDE BUTTONS -->
+            <div class="slide_btn_box">
+                <button id="slide_prev"><i class="ri-arrow-left-double-line"></i></button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button id="slide_next"><i class="ri-arrow-right-double-line"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== SECTION 3 ====================== -->
+    <section class="section_3">
+        <div>
+            <h2>Popular Venue</h2>
+            <p onclick="window.location.href='venue.html'">View All (1000)</p>
+        </div>
+        <div class="slide_wrapper_2">
+            <div class="slide_container_2" id="slide_container-2">
+                <!-- PAGE 1 -->
+                <div class="slide_page_2" id="slide_page-2_1">
+                    <div class="slide_card_2">
+                        <img src="assets/section_2_image_4.png">
+                        <h2>CELEBRANT</h2>
+                    </div>
+                    <div class="slide_card_2">
+                        <img src="assets/image 2 (1).png">
+                        <h2>MAKEUP ARTIST</h2>
+                    </div>
+                    <div class="slide_card_2">
+                        <img src="assets/section_2_7_image.png">
+                        <h2>WEDDING VENUE</h2>
+                    </div>
+                    <div class="slide_card_2">
+                        <img src="assets/image 19 (1).png">
+                        <h2>DECORATORS</h2>
+                    </div>
+                </div>
+                <!-- PAGE 2 -->
+                <div class="slide_page_2" id="slide_page-2_2">
+                    <div class="slide_card_2">
+                        <img src="assets/image 1.png">
+                        <h2>DESTINATION WEDDINGS</h2>
+                    </div>
+                    <div class="slide_card_2">
+                        <img src="assets/image 2.png">
+                        <h2>HONEYMOON & TRAVEL WEDDING</h2>
+                    </div>
+                    <div class="slide_card_2">
+                        <img src="assets/image 3.png">
+                        <h2>VIDEOGRAPHERS WEDDING</h2>
+                    </div>
+                    <div class="slide_card_2">
+                        <img src="assets/section_2_image_4.png">
+                        <h2>CELEBRANT</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- SLIDE BUTTONS -->
+            <div class="slide_btn_box_2">
+                <button id="slide_prev-2"><i class="ri-arrow-left-double-line"></i></button>
+                <button class="slide_num_2">1</button>
+                <button class="slide_num_2">2</button>
+                <button class="slide_num_2">3</button>
+                <button id="slide_next-2"><i class="ri-arrow-right-double-line"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== SECTION 4 ====================== -->
+    <section class="section_4_container">
+        <div class="section_4_left">
+            <img src="assets/image 18 (1).png" alt="Section 4 Image">
+        </div>
+        <div class="section_4_right">
+            <h2>Yours Dreams, Our Dreams...</h2>
+            <p>The "best" wedding photography style is subjective and depends on the couple's preferences.</p>
+            <div>
+                <button>View</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== SECTION 5 ====================== -->
+    <section class="section_5">
+        <div>
+            <h2>Featured Videos</h2>
+            <p>View All (50)</p>
+        </div>
+        <div class="section_5_container">
+            <div class="section_5_card">
+                <img src="assets/Rectangle 9.png" alt="Wedding Video">
+                <h2>Wedding Video</h2>
+            </div>
+            <div class="section_5_card">
+                <img src="assets/section_5_image_2.png" alt="Video">
+                <h2>Video</h2>
+            </div>
+            <div class="section_5_card">
+                <img src="assets/seciton_5_image_3.png" alt="Video">
+                <h2>Video</h2>
+            </div>
+            <div class="section_5_card">
+                <img src="assets/section_5_image_4.png" alt="Video">
+                <h2>VideoVideo</h2>
+            </div>
+            <div class="section_5_card">
+                <img src="assets/Rectangle 9 (1).png" alt="MGVideo">
+                <h2>MGVideo</h2>
+            </div>
+            <div class="section_5_card">
+                <img src="assets/section_5_image_6.png" alt="Wedding Video">
+                <h2>Wedding Video</h2>
+            </div>
+            <div class="section_5_card">
+                <img src="assets/Rectangle 9 (2).png" alt="Video">
+                <h2>Video</h2>
+            </div>
+            <div class="section_5_card">
+                <img src="assets/Rectangle 9 (3).png" alt="Celebrate">
+                <h2>Celebrate</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== SECTION 6 ====================== -->
+    <section class="section_6">
+        <h2>Reviews</h2>
+        <div class="section_6_container">
+            <div class="section_6_blog">
+                <div></div>
+                <div>
+                    <h2>John</h2>
+                </div>
+                <p>
+                    Aihole is one of the least explored architectural treasures in Karnataka, 
+                    offering a wedding experience like no other amidst ancient temples and carvings.
+                </p>
+            </div>
+            <div class="section_6_blog section_6_blog_active">
+                <div>
+                    <img src="assets/section_6_profile_image.png" alt="Section 6 Profile">
+                </div>
+                <div>
+                    <i class="ri-arrow-left-s-line"></i>
+                    <h2>Celin</h2>
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+                <p>
+                    Aihole is one of the least explored architectural treasures in Karnataka, 
+                    offering a wedding experience like no other amidst ancient temples and carvings.
+                </p>
+            </div>
+            <div class="section_6_blog">
+                <div></div>
+                <div>
+                    <h2>Kamala</h2>
+                </div>
+                <p>
+                    Aihole is one of the least explored architectural treasures in Karnataka, 
+                    offering a wedding experience like no other amidst ancient temples and carvings.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="section_6_dots section_6_dots_active"></div>
+            <div class="section_6_dots"></div>
+            <div class="section_6_dots"></div>
+        </div>
+    </section>
+
+    <!-- ====================== FOOTER ====================== -->
+    <footer>
+        <div class="footer_top">
+            <div class="footer_top_part_1">
+                <div class="header_logo" onclick="window.location.href='index.html'">
+                    <div class="header_one"><span>O</span>ne</div>
+                    <div class="header_event">Event</div>
+                </div>
+                <div>
+                    <h2>Social Media</h2>
+                    <div class="footer_social_links">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_top_part_2">
+                <h2>Venues</h2>
+                <p>Chennai</p>
+                <p>Mumbai</p>
+                <p>Dubai</p>
+                <p>Delhi</p>
+                <p>Madurai</p>
+                <p>Kanniyakumari</p>
+            </div>
+            <div class="footer_top_part_3">
+                <h2>Suppliers</h2>
+                <p>Photographers</p>
+                <p>Decorators</p>
+                <p>Venues Planner</p>
+                <p>Choreographers</p>
+                <p>Designers</p>
+                <p>Makeup Artists</p>
+            </div>
+            <div class="footer_top_part_4">
+                <h2>Quick Links</h2>
+                <p>About Us</p>
+                <p>careers</p>
+                <p>Contact Us</p>
+                <p>Privacy Policy</p>
+                <p>Terms &</p>
+                <p>Conditions</p>
+            </div>
+            <div class="footer_top_part_5">
+                <h2>Newsletter</h2>
+                <p>Subscribe to Get Latest</p>
+                <p>media updates</p>
+                <button onclick="window.location.href='chat.html'">Live Chat</button>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <h2>Made wit love by</h2>
+            <h3>thecreation.design</h3>
+        </div>
+    </footer>
+
+    <!-- ====================== SCRIPT ====================== -->
+    <script src="script.js"></script>
+</body>
+</html>
